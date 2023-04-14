@@ -1,0 +1,95 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $black-for-bg;
+
+    &__info {
+        display: flex;
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+    }
+
+    &__item + &__item {
+
+        @media screen and (max-width: 767px) {
+            margin-top: 60px;
+        }
+
+        @media screen and (min-width: 768px) {
+            
+        }
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__address {
+        text-align: center;
+        color: $primary-white-color;
+        margin-bottom: 9px;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        display: block;
+    }
+
+    &__text {
+        color: $white-for-links;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $primary-white-color;
+    }
+
+    &__social-icon {
+        fill: currentColor;
+    }
+}
+
+.page-footer__logo {
+    display: block;
+    margin-bottom: 20px;
+
+    &,
+    &:hover,
+    &:focus {
+        color: $primary-white-color;
+    }
+}
+
+.page-footer__social-link {
+    background-color: $white-for-social;
+    color: $primary-white-color;
+
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.page-footer__contacts {
+    justify-content: center;
+}

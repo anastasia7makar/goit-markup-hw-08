@@ -1,0 +1,103 @@
+.form {
+    padding: 40px;
+
+    &__title {
+        width: 100%;
+        margin-bottom: 12px;
+
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: $title-text-color;
+    }
+
+    &__label {
+        display: inline-block;
+        margin-bottom: 4px;
+
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+
+        color: $primary-text-color;
+    }
+
+    &__icon {
+        fill: $title-text-color;
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.form__field {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    &--textarea {
+        margin-bottom: 18px;
+    }
+
+    &:focus-within .form__input {
+        border: 1px solid $accent-color;
+    }
+
+    &:focus-within .form__icon {
+        border-color: $accent-color;
+        fill: $accent-color;
+    }
+}
+
+.form__input {
+    width: 100%;
+    padding: 11px 12px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--comment {
+        height: 120px;
+        padding: 12px 16px;
+
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline: none;
+        color: $title-text-color;
+    }
+
+    &--comment::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+.form__button {
+    @extend %button;
+    box-sizing: border-box;
+    width: 200px;
+    padding: 10px 52px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $blue-for-button-accent;
+    }
+}
