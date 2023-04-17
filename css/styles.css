@@ -193,7 +193,7 @@ ul {
   margin-right: auto;
   outline: 1px solid #2196f3;
   background-image: linear-gradient(to right, var(--bg-for-hero), var(--bg-for-hero)),
-    url('../images/overlay.jpg');
+    url('../images/');
   background-color: var(--black-for-bg);
   background-repeat: no-repeat;
   background-position: center;

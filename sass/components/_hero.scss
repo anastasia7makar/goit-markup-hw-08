@@ -48,7 +48,7 @@
     margin-right: auto;
     max-width: 767px;
     min-height: 400px;
-    background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('/images/img-for-mobile/hero-overlay-mobile.jpg');
+    background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('../images/img-for-mobile/hero-overlay-mobile.jpg');
     background-color: $black-for-bg;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,7 +57,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         & {
-            background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('/images/img-for-mobile/hero-overlay-mobile@2x.jpg');
+            background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('../images/img-for-mobile/hero-overlay-mobile@2x.jpg');
         }
     
     }
@@ -65,7 +65,7 @@
    @media screen and (min-width: 768px) {
         max-width: 1199px;
         min-height: 400px;
-        background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('/images/img-for-tablet/hero-overlay-tablet.jpg');
+        background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('../images/img-for-tablet/hero-overlay-tablet.jpg');
         background-color: $black-for-bg;
         background-repeat: no-repeat;
         background-position: center;
@@ -74,7 +74,7 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 & {
-                background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('/images/img-for-tablet/hero-overlay-tablet@2x.jpg');
+                background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('../images/img-for-tablet/hero-overlay-tablet@2x.jpg');
                 }
             }
     }
@@ -82,7 +82,7 @@
     @media screen and (min-width: 1200px) {
         max-width: 1600px;
         min-height: 600px;
-        background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('/images/img-for-desktop/hero-overlay-desktop.jpg');
+        background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('../images/img-for-desktop/hero-overlay-desktop.jpg');
         background-color: $black-for-bg;
         background-repeat: no-repeat;
         background-position: center;
@@ -91,7 +91,7 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 & {
-                background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('/images/img-for-desktop/hero-overlay-desktop@2x.jpg');
+                background-image: linear-gradient(to right, $bg-for-hero, $bg-for-hero), url('../images/img-for-desktop/hero-overlay-desktop@2x.jpg');
                 }
             }
     }
