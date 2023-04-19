@@ -358,7 +358,7 @@ ul {
   position: relative;
   padding: 0 10px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 9px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -707,18 +707,35 @@ ul {
   fill: #2196f3;
 }
 
-.form {
-  padding: 40px;
+@media screen and (max-width: 395px) {
+  .form {
+    padding: 15px 30px;
+  }
+}
+@media screen and (min-width: 396px) {
+  .form {
+    padding: 40px;
+  }
 }
 .form__title {
   width: 100%;
   margin-bottom: 12px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (max-width: 395px) {
+  .form__title {
+    font-size: 18px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 396px) {
+  .form__title {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 .form__label {
   display: inline-block;
@@ -745,8 +762,10 @@ ul {
   cursor: pointer;
   margin-bottom: 10px;
 }
-.form__field--textarea {
-  margin-bottom: 18px;
+@media screen and (min-width: 396px) {
+  .form__field--textarea {
+    margin-bottom: 18px;
+  }
 }
 .form__field:focus-within .form__input {
   border: 1px solid #2196f3;
@@ -767,12 +786,21 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input--comment {
-  height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
   color: #212121;
+}
+@media screen and (max-width: 395px) {
+  .form__input--comment {
+    height: 42px;
+  }
+}
+@media screen and (min-width: 396px) {
+  .form__input--comment {
+    height: 120px;
+  }
 }
 .form__input--comment::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -822,7 +850,16 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+}
+@media screen and (max-width: 395px) {
+  .checkbox-block {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 396px) {
+  .checkbox-block {
+    margin-bottom: 30px;
+  }
 }
 .checkbox-block__icon {
   display: inline-block;
@@ -927,7 +964,7 @@ textarea {
   line-height: 1.14;
   text-transform: uppercase;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .feauters-list__title {
     text-align: center;
   }
@@ -1487,7 +1524,7 @@ textarea {
         flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-list {
     margin: -15px;
   }
@@ -1500,7 +1537,9 @@ textarea {
 }
 @media screen and (max-width: 1199px) {
   .portfolio-list__textbox {
-    min-height: 150px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 .portfolio-list__title {
@@ -1527,7 +1566,6 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -1536,14 +1574,40 @@ textarea {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 395px) {
+  .portfolio-list__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 24px;
+  }
+}
+@media screen and (min-width: 396px) {
+  .portfolio-list__box {
+    padding: 63px 24px;
+  }
+}
 .portfolio-list__overlay-text {
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+@media screen and (max-width: 395px) {
+  .portfolio-list {
+    font-size: 16px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 396px) {
+  .portfolio-list {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
 
 .portfolio-list__item {
@@ -1560,6 +1624,9 @@ textarea {
   .portfolio-list__item {
     width: calc((100% - 60px) / 2);
     margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1594,6 +1661,17 @@ textarea {
 .portfolio-list__link:hover .portfolio-list__box {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .portfolio-list__img {
